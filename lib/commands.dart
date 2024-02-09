@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:riscambler/register.dart';
 
 class Commands {
@@ -12,12 +14,13 @@ class Commands {
   /// Register x1Register = Register(name: "x1", alterName: "ra");
   /// print(ADD(x1Register, 5, 10, true)); // Output: ADD: x1 = 15
   /// ```
-  static void ADD(Register register, int value1, int value2,
+  static int ADD(Register register, int value1, int value2,
       [bool debug = false]) {
 
     register.setValue(value1 + value2);
     if (debug) {
       print("ADD: ${register.name} = ${register.getValue()}");
     }
+    return register.getValue();
   }
 }

@@ -1,3 +1,5 @@
-import 'package:test/test.dart';
+import 'arithmetic_test.dart';
 
-void main() {}
+void main() {
+  testArithmetic();
+}

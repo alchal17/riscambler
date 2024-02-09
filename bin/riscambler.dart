@@ -1,6 +1,7 @@
 import 'package:riscambler/register.dart';
 
 void main(List<String> arguments) {
+  // ignore: unused_local_variable
   List<Register> registers = [
     Register(name: "x0", alterName: "zero"),
     Register(name: "x1", alterName: "ra"),
